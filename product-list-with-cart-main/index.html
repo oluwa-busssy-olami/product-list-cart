@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="desert-section">
+        <div class="desert-card Waffle">
+          <picture class="img-container">
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/image-waffle-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="assets/images/image-waffle-tablet.jpg" />
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/image-waffle-mobile.jpg" />
+            <img
+              src="assets/images/image-waffle-thumbnail.jpg"
+              alt="Responsive Image"
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart" />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Waffle</p>
+            <h2>Waffle with Berries</h2>
+            <h3>$ 6.50</h3>
+          </div>
+        </div>
+        <div class="desert-card vanilla">
+          <picture class="img-container">
+            <source
+              media=" (min-width: 1024px) "
+              srcset="assets/images/image-creme-brulee-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px) "
+              srcset="assets//images/image-creme-brulee-tablet.jpg" />
+            <source
+              media="(max-width: 767px) "
+              srcset="assets/images/image-creme-brulee-mobile.jpg" />
+            <img
+              src="assets/images/image-creme-brulee-thumbnail.jpg "
+              alt="Responsive Image "
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg " alt="add to cart " />
+
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0</span>
+            <button class="remove-item">-</button>
+          </div>
+
+          <div class="product-detail">
+            <p>Crème Brûlée</p>
+            <h2>Vanilla Bean Crème Brûlée</h2>
+            <h3>$7.00</h3>
+          </div>
+        </div>
+        <div class="desert-card macaron">
+          <picture class="img-container">
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/image-macaron-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="assets/images/image-macaron-tablet.jpg" />
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/image-macaron-mobile.jpg" />
+            <img
+              src="assets/images/image-macaron-thumbnail.jpg"
+              alt="Responsive Image"
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart" />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0</span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Marcon</p>
+            <h2>Marcaron Mix of Five</h2>
+            <h3>$8.00</h3>
+          </div>
+        </div>
+        <div class="desert-card Tiramisu">
+          <picture class="img-container">
+            <source
+              media=" (min-width: 1024px) "
+              srcset="assets/images/image-tiramisu-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px) "
+              srcset="assets/images/image-tiramisu-tablet.jpg" />
+            <source
+              media="(max-width: 767px) "
+              srcset="assets/images/image-tiramisu-mobile.jpg" />
+            <img
+              src="assets/images/image-tiramisu-thumbnail.jpg "
+              alt="Responsive Image "
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg " alt="add to cart " />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Tiramisu</p>
+            <h2>Classic Tiramisu</h2>
+            <h3>$5.50</h3>
+          </div>
+        </div>
+        <div class="desert-card baklava">
+          <picture class="img-container">
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/image-baklava-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="assets/images/image-baklava-tablet.jpg" />
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/image-baklava-mobile.jpg" />
+            <img
+              src="assets/images/image-baklava-thumbnail.jpg"
+              alt="Responsive Image"
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart" />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item"> 0 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Baklava</p>
+            <h2>Pistachio Baklava</h2>
+            <h3>$4.00</h3>
+          </div>
+        </div>
+        <div class="desert-card meringue">
+          <picture class="img-container">
+            <source
+              media=" (min-width: 1024px) "
+              srcset="assets/images/image-meringue-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px) "
+              srcset="assets/images/image-meringue-tablet.jpg" />
+            <source
+              media="(max-width: 767px) "
+              srcset="assets/images/image-meringue-mobile.jpg" />
+            <img
+              src="assets/images/image-meringue-thumbnail.jpg"
+              alt="Responsive Image "
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg " alt="add to cart " />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Pie</p>
+            <h2>Lemon Meringue Pie</h2>
+            <h3>$5.00</h3>
+          </div>
+        </div>
+        <div class="desert-card velvet-cake">
+          <picture class="img-container">
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/image-cake-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="assets/images/image-cake-tablet.jpg" />
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/image-cake-mobile.jpg" />
+            <img
+              src="assets/images/image-cake-thumbnail.jpg"
+              alt="Responsive Image"
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart" />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item"> 1 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Cake</p>
+            <h2>Red Velvet Cake</h2>
+            <h3>$4.50</h3>
+          </div>
+        </div>
+        <div class="desert-card caramel">
+          <picture class="img-container">
+            <source
+              media=" (min-width: 1024px) "
+              srcset="assets/images/image-brownie-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px) "
+              srcset="assets/images/image-brownie-tablet.jpg" />
+            <source
+              media="(max-width: 767px) "
+              srcset="assets/images/image-brownie-mobile.jpg" />
+            <img
+              src="assets/images/image-brownie-thumbnail.jpg "
+              alt="Responsive Image "
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg " alt="add to cart " />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item"> 0</span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Brownies</p>
+            <h2>Salted Caramel Brownies</h2>
+            <h3>$5.50</h3>
+          </div>
+        </div>
+        <div class="desert-card panna">
+          <picture class="img-container">
+            <source
+              media="(min-width: 1024px) "
+              srcset="assets/images/image-panna-cotta-desktop.jpg" />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px) "
+              srcset="assets/images/image-panna-cotta-tablet.jpg" />
+            <source
+              media="(max-width: 767px) "
+              srcset="assets/images/image-panna-cotta-mobile.jpg" />
+            <img
+              src="assets/images/image-panna-cotta-thumbnail.jpg"
+              class="desert-card-img" />
+          </picture>
+          <button class="cart-btn">
+            <img src="assets/images/icon-add-to-cart.svg " alt="add to cart " />
+            Add to Cart
+          </button>
+          <div class="clicked-cart-btn">
+            <button class="add-item">+</button>
+            <span class="crement-item">0 </span>
+            <button class="remove-item">-</button>
+          </div>
+          <div class="product-detail">
+            <p>Panna Cotta</p>
+            <h2>Vanilla Panna Cotta</h2>
+            <h3>$6.50</h3>
+          </div>
+        </div>
+      </div>
+      <div class="added-cart">
+        <div class="cart-added">
+          <h2>Your Cart <span class="update-cart">(0)</span></h2>
+          <img
+            src="assets/images/illustration-empty-cart.svg "
+            alt=" "
+            class="empty-cart" />
+          <p>Your added items will appear here</p>
+        </div>
+      </div>
+    </section>
+    (
+    <!-- Quantity) -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge ">Frontend Mentor</a
+      >. Coded by <a href="# ">Your Name Here</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
